@@ -1,5 +1,5 @@
 ---
-name: agnes_qwenclaw
+name: agnes-qwenclaw
 description: 帮助 QwenClaw/QwenPaw 接入 Agnes AI 的 OpenAI 兼容文本、视觉理解与图像生成接口，尤其关注 Agnes 图像请求的参数写法。
 metadata:
   requires:
@@ -49,8 +49,8 @@ metadata:
 手动安装本 skill 时，把本文件放到以下任一路径，并在工作区启用：
 
 ```text
-$QWENPAW_WORKING_DIR/skill_pool/agnes_qwenclaw/SKILL.md
-$QWENPAW_WORKING_DIR/workspaces/{agent_id}/skills/agnes_qwenclaw/SKILL.md
+$QWENPAW_WORKING_DIR/skill_pool/agnes-qwenclaw/SKILL.md
+$QWENPAW_WORKING_DIR/workspaces/{agent_id}/skills/agnes-qwenclaw/SKILL.md
 ```
 
 从 GitHub 导入时，使用包含此 `SKILL.md` 的页面 URL。
@@ -212,7 +212,7 @@ data[0].b64_json
 - 图生图异常：移除 `tags`；Agnes 图生图不需要 `tags: ["img2img"]`。
 - 输入图像读取失败：使用无需登录、cookie 或防盗链的公开 HTTPS URL；否则改用 Data URI。
 - 超时：图像生成可能需要数秒到数分钟。客户端超时建议设为 `60s` 到 `360s`。
-- Skill 未加载：确认工作区副本存在于 `workspaces/{agent_id}/skills/agnes_qwenclaw/SKILL.md`，并已在 QwenClaw/QwenPaw 技能界面启用。
+- Skill 未加载：确认工作区副本存在于 `workspaces/{agent_id}/skills/agnes-qwenclaw/SKILL.md`，并已在 QwenClaw/QwenPaw 技能界面启用。
 
 ## 验证清单
 
